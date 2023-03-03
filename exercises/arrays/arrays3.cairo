@@ -2,7 +2,6 @@
 // Make me compile and pass the test!
 // Execute `starklings hint arrays3` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
 
 use array::ArrayTrait;
 use option::OptionTrait;
@@ -12,7 +11,7 @@ fn create_array() -> Array::<felt> {
     a.append(0);
     a.append(1);
     a.append(2);
-    a.pop_front().unwrap();
+    // a.pop_front().unwrap();
     a
 }
 
@@ -27,4 +26,3 @@ fn test_arrays3() {
 
 // Don't mind this for now.
 impl OptionDrop of Drop::<Option::<@felt>>;
-
